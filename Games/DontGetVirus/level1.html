@@ -1,0 +1,25 @@
+  
+<!DOCTYPE html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Avoid The Virus</title>
+    <script>
+        function back() {
+          window.history.back()
+        }
+    </script>
+</head>
+<body>
+    <h1>The goal of this game is simple: DON'T GET A VIRUS</h1>
+    <button id="virus1">This is a virus</button>
+    <button onclick="location.href='level2.html'" type="button">
+        This isn't</button>
+        <button onclick="back()">Back</button>
+</body>
+<script>
+document.getElementById("virus1").addEventListener("click",wrongChoice);
+function wrongChoice() {
+    alert("You choose... poorly. Or maybe you wanted a virus, but who in their right mind would want one of those. Unless you're actually crazy, or maybe you're on a friend's computer you devious scamp. Oh by the way, you lost.")
+}
+</script>
+</html>

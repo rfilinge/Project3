@@ -1,0 +1,14 @@
+  
+h1 {
+  margin-left: 20%;
+  margin-top:10%;
+  font-size: 40px;
+  margin-right:20%;
+  text-align: center;
+}
+
+#userGuess {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 40%;
+}

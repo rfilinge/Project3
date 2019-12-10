@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Avoid The Virus</title>
+    <script>
+        function back() {
+          window.history.back()
+        }
+    </script>
+</head>
+<body>
+    <h1>All right. It's all for nothing. Choose wrong and you get a virus. Choose correctly and you get a crisp highfive</h1>
+    <button id="virus1">Is it this one</button>
+    <button id="virus2">Maybe this one</button>
+    <button id="virus3">Not this one</button>
+    <button id="virus4">Just kidding it was the last one</button>
+    <button id="victory"></button>
+    <button onclick="back()">Back</button>
+</body>
+<script>
+document.getElementById("virus1").addEventListener("click",wrongChoice);
+document.getElementById("virus2").addEventListener("click",wrongChoice);
+document.getElementById("virus3").addEventListener("click",wrongChoice);
+document.getElementById("virus4").addEventListener("click",wrongChoice);
+document.getElementById("victory").addEventListener("click",correctChoice);
+function wrongChoice() {
+    alert("FOOL! This is MY game, you'll never win!");
+}
+function correctChoice() {
+    alert("B..b..b..but how? You cheated didn't you? You must have. Fine. I owe you a hive five so here you go *slap* hahahahahhahaha... I gave you a high-five to your FACE. Take that cheater...Wait! Come back! I'm so lonely");  
+}
+</script>
+</html>

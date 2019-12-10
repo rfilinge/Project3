@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Avoid The Virus</title>
+    <script>
+        function back() {
+          window.history.back()
+        }
+    </script>
+</head>
+<body>
+    <h1>Congratulations! But this isn't over yet</h1>
+    <button id="virus1">Click me</button>
+    <button id="virus2">Click me</button>
+    <button id="virus3">Click me</button>
+    <button onclick="location.href='level3.html'" type="button">
+            Don't click me</button>
+            <button onclick="back()">Back</button>
+</body>
+<script>
+document.getElementById("virus1").addEventListener("click",wrongChoice);
+document.getElementById("virus2").addEventListener("click",wrongChoice);
+document.getElementById("virus3").addEventListener("click",wrongChoice);
+function wrongChoice() {
+    alert("Hahahahahahahahahahahahahaha... I got you this time. Can't believe you fell for that, my cat could have seen through that trick. He's actually really smart...eerily so...wait he's looking at me now. He's coming closer. Send help.")
+}
+</script>
+</html>

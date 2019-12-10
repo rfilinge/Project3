@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link type="text/css" rel="stylesheet" href="cookiestyles.css" media="screen">
+    <script src="cookieclicker.js"></script>
+    <script>
+        function back() {
+          window.history.back()
+        }
+    </script>
+  </head>
+  <body>
+      <main id="main">
+          <h2 id="cClicker">Cookie Clicker</h2>
+          <p>
+          <table id=cookieTable>
+                  <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+              <caption id="cookieAmountName">Cookies</caption>
+              <tr>
+                  <td>Current Cookie Amount: </td>
+                  <td id="currentCookies">0</td>
+              </tr>
+              <tr>
+                  <td>Total Cookies Ever Produced: </td>
+                  <td id="totalCookies">0</td>
+              </tr>
+              <tr>
+                      <td>Clicker Level: </td>
+                      <td id="clickerLevel">1</td>
+              </tr>
+              <tr>
+                  <td>Clicker Upgrade Cost: </td>
+                  <td id=clickerCost>20</td>
+              </tr>
+          </table>
+          <button class="cookieAction" onclick="makeCookie()">Make A Cookie</button> <br>              
+          <button class="cookieAction" onclick="upgradeClicker()">Upgrade Clicker Level</button> <br>
+          <table id=bakeryTable>
+          <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+              <tr>
+                  <td>Current Bakery Level: </td>
+                  <td id="bakeryLevel">0</td>
+              </tr>
+              <tr>
+                  <td>Bakery Upgrade Cost: </td>
+                  <td id="bakeryCost">20</td>
+              </tr>
+          </table>
+          <button class="cookieAction" onclick="upgradeProduction()">Upgrade Bakery Level</button> <br>
+
+          <table id=factoryTable>
+              <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+                  <tr>
+                      <td>Current Factory Level: </td>
+                      <td id="factoryLevel">0</td>
+                  </tr>
+                  <tr>
+                      <td>Factory Upgrade Cost: </td>
+                      <td id="factoryCost">1000</td>
+                  </tr>
+              </table>
+              <button class="cookieAction" onclick="upgradeProductionFactory()">Upgrade Factory Level</button> <br>
+    
+            </p>
+            <button onclick="back()">Back</button>
+      </main>
+  </body>
+</html>
